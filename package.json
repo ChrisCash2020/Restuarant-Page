@@ -1,0 +1,25 @@
+{
+  "name": "Restuarant-Page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisCash2020/Restuarant-Page.git"
+  },
+  "keywords": [],
+  "author": "Chris Olowokere",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChrisCash2020/Restuarant-Page/issues"
+  },
+  "homepage": "https://github.com/ChrisCash2020/Restuarant-Page#readme",
+  "devDependencies": {
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
