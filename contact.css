@@ -7,7 +7,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
   font-family: 'Mulish', sans-serif;
   background-color: linen;
@@ -37,59 +36,69 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   justify-content: center;
 }
 .title {
   font-family: 'Tangerine', cursive;
   font-size: 4rem;
   margin: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.title img {
-  height: 3rem;
-  width: 4rem;
-  margin-left: 15px;
 }
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: space-evenly;
-  width: 69%;
-  padding: 50px 20px;
+  justify-content: space-between;
+  width: 66%;
+  padding: 50px;
   background-color: #c3e0e5;
   border-radius: 15px;
   margin-bottom: 8vh;
 }
-.food-item {
+form {
+  width: 30%;
   display: flex;
-  flex-direction: row;
-}
-.items {
-  height: 185px;
-  width: 500px;
-}
-.food-title {
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  font-size: 1.2rem;
-  font-family: 'Sansita Swashed', cursive;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-  border-bottom: 2px dotted orangered;
+  height: 100%;
 }
-.food-pic img {
-  width: 185px;
-  height: 185px;
+.mini-txt {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  align-items: center;
+}
+.icon {
+  color: #ad885f;
+  font-size: 1rem;
   margin-right: 10px;
 }
-.price {
-  color: orangered;
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 10px 0;
+  padding: 5px 0;
+  width: 202px;
 }
-.desc {
-  font-size: 1.2rem;
+input:last-child {
+  padding: 5px;
+  text-align: center;
+  background-color: #274472;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: 80px;
+  color: linen;
+}
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 10px 0;
+  padding-bottom: 5px;
+  width: 202px;
+  height: 62px;
+  resize: none;
+  font-family: 'Mulish', cursive;
+  font-weight: 500;
+  color: #827587;
 }
