@@ -1,45 +1,14 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100vw;
-  font-family: 'Mulish', sans-serif;
+@import url('./index.css');
+#content {
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.2),
       rgba(255, 255, 255, 0.2)
     ),
-    url('./restaurant.jpg');
+    url('../img/restaurant.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
-nav {
-  display: flex;
-  flex-direction: row;
-  background-color: #274472;
-  align-items: center;
-  justify-content: space-around;
-  height: 80px;
-  width: 100%;
-  padding: 20px;
-  position: absolute;
-  top: 0;
-}
-.heading {
-  width: 45%;
-  text-align: center;
-  font-size: 3.5rem;
-  font-family: 'Tangerine', cursive;
-}
-
 h3,
 p,
 .fancy-heading,

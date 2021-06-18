@@ -1,31 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  font-family: 'Mulish', sans-serif;
+@import url('./index.css');
+#content {
   background-color: linen;
-}
-nav {
-  display: flex;
-  flex-direction: row;
-  background-color: #274472;
-  align-items: center;
-  justify-content: space-around;
-  height: 80px;
-  width: 100%;
-  padding: 20px;
-}
-.heading {
-  width: 45%;
-  text-align: center;
-  font-size: 3.5rem;
-  font-family: 'Tangerine', cursive;
 }
 .heading,
 h3 {
