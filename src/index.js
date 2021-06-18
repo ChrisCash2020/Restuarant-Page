@@ -1,4 +1,13 @@
-import pageLoad from './pageLoad.js';
-import menuLoad from './menuListener.js';
-pageLoad();
-menuLoad();
+import { pageLoad } from './pageLoad';
+import { menuBtn } from './menuBtn';
+import { homeBtn } from './homeBtn';
+import styles from './css/home.css';
+import img from './img/restaurant.jpg';
+pageLoad.updatePage(pageLoad.main[0]);
+let navLinks = document.querySelectorAll('nav h3');
+let homeLink = navLinks[0];
+let menuLink = navLinks[1];
+let contactLink = navLinks[2];
+console.log(menuLink);
+menuLink.addEventListener('click', menuBtn);
+homeLink.addEventListener('click', homeBtn);

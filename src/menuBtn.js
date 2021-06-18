@@ -1,16 +1,12 @@
-import * as pg from './pageLoad.js';
-import styles from './css/menu.css';
-function menuLoad() {
-  let navLinks = document.querySelectorAll('nav h3');
-  navLinks[1].addEventListener('click', (e) => {
-    e.preventDefault();
-    pg.mainFunc(`    <div class="main">
-          <h1 class="title">Menu <img src="./chef.png" alt="" /></h1>
+import { pageLoad } from './pageLoad';
+function menuBtn() {
+  pageLoad.main = `    <div class="main">
+          <h1 class="title">Menu</h1>
           <div class="container">
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-                  <img src="./img/hamburger.png" alt="" />
+                
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -27,7 +23,7 @@ function menuLoad() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-                  <img src="./img/cheeseburger.png" alt="" />
+                
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -41,7 +37,7 @@ function menuLoad() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-                  <img src="./img/double-cheeseburger.png" alt="" />
+                
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -57,7 +53,7 @@ function menuLoad() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-                  <img src="./img/steak.png" alt="" />
+
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -71,7 +67,6 @@ function menuLoad() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-                  <img src="./img/ribs.png" alt="" />
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -85,7 +80,7 @@ function menuLoad() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-                  <img src="./img/grilled-cheese.png" alt="" />
+               
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -102,7 +97,6 @@ function menuLoad() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-                  <img src="./img/caesar-salad.png" alt="" />
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -119,7 +113,7 @@ function menuLoad() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-                  <img src="./img/french-fries.png" alt="" />
+       
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -134,7 +128,7 @@ function menuLoad() {
               </div>
             </div>
           </div>
-        </div>`);
-  });
+        </div>`;
+  return pageLoad.updatePage;
 }
-export default menuLoad;
+export { menuBtn };
