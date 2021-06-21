@@ -1,25 +1,17 @@
 @import url('./index.css');
-#content {
-  background-color: linen;
-}
-.heading,
-h3 {
-  color: rgba(219, 211, 209, 1);
-  text-shadow: 1.5px 1.5px #707070;
-}
-.main {
+.contact-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   justify-content: center;
 }
-.title {
+.contact-main .title {
   font-family: 'Tangerine', cursive;
   font-size: 4rem;
   margin: 30px;
 }
-.container {
+.contact-main .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,25 +21,25 @@ h3 {
   border-radius: 15px;
   margin-bottom: 8vh;
 }
-form {
+.contact-main form {
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
-.mini-txt {
+.contact-main .mini-txt {
   display: flex;
   flex-direction: row;
   margin: 20px 0;
   align-items: center;
 }
-.icon {
+.contact-main .icon {
   color: #ad885f;
   font-size: 1rem;
   margin-right: 10px;
 }
-input {
+.contact-main input {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid black;
@@ -55,7 +47,7 @@ input {
   padding: 5px 0;
   width: 202px;
 }
-input:last-child {
+.contact-main input:last-child {
   padding: 5px;
   text-align: center;
   background-color: #274472;
@@ -64,7 +56,7 @@ input:last-child {
   width: 80px;
   color: linen;
 }
-textarea {
+.contact-main textarea {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid black;

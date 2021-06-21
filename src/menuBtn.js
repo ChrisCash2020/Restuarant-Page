@@ -1,12 +1,19 @@
-import { pageLoad } from './pageLoad';
-function menuBtn() {
-  pageLoad.main = `    <div class="main">
+import salad from './img/caesar-salad.png';
+import CB from './img/cheeseburger.png';
+import chef from './img/chef.png';
+import DCB from './img/double-cheeseburger.png';
+import FF from './img/french-fries.png';
+import GC from './img/grilled-cheese.png';
+import HB from './img/hamburger.png';
+import ribs from './img/ribs.png';
+import steak from './img/steak.png';
+export let menu = `    <div class="menu-main tab" style="display: none;">
           <h1 class="title">Menu</h1>
           <div class="container">
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-                
+                <img src="${HB}" alt="" />
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -23,7 +30,7 @@ function menuBtn() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-                
+                <img src="${CB}" alt="" />
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -37,7 +44,7 @@ function menuBtn() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-                
+                <img src="${DCB}" alt="" />
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -53,7 +60,7 @@ function menuBtn() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-
+                <img src="${steak}" alt="" />
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -67,6 +74,7 @@ function menuBtn() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
+                <img src="${ribs}" alt="" />
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -80,7 +88,7 @@ function menuBtn() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-               
+                <img src="${GC}" alt="" />
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -97,6 +105,7 @@ function menuBtn() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
+                <img src="${salad}" alt="" />
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -113,7 +122,7 @@ function menuBtn() {
             <div class="items">
               <div class="food-item">
                 <div class="food-pic">
-       
+                <img src="${FF}" alt="" />
                 </div>
                 <div class="item-text">
                   <div class="food-title">
@@ -129,6 +138,3 @@ function menuBtn() {
             </div>
           </div>
         </div>`;
-  return pageLoad.updatePage;
-}
-export { menuBtn };

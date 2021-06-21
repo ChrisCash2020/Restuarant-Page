@@ -1,31 +1,17 @@
 @import url('./index.css');
-#content {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.2)
-    ),
-    url('../img/restaurant.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-h3,
-p,
-.fancy-heading,
-.heading {
-  color: rgba(219, 211, 209, 1);
-  text-shadow: 1.5px 1.5px #707070;
-}
-
-.main {
+.home-main {
   height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 5vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
-.message {
+.home-main .message {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,18 +19,18 @@ p,
   width: 50%;
   margin: 8vh;
 }
-.fancy-heading {
+.home-main .fancy-heading {
   text-align: center;
   font-size: 4.2rem;
 }
-input {
+.home-main input {
   margin-top: 1vh;
   border-radius: 25px;
   padding: 5px;
   background-color: #ad885f;
   color: #ccc;
 }
-.info {
+.home-main .info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -52,19 +38,19 @@ input {
   background-color: rgba(0, 0, 0, 0.5);
   width: 40%;
 }
-.mini-txt {
+.home-main .mini-txt {
   display: flex;
   flex-direction: row;
   margin: 20px 0;
 }
-strong {
+.home-main strong {
   color: #ad885f;
   text-shadow: none;
 }
-p {
+.home-main p {
   font-size: 1.12rem;
 }
-.icon {
+.home-main .icon {
   color: #ad885f;
   font-size: 1rem;
   margin-right: 10px;
