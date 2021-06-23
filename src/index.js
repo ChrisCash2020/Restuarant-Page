@@ -4,7 +4,6 @@ import contactStyles from './css/contact.css';
 import { home } from './homeBtn';
 import { menu } from './menuBtn';
 import { contact } from './contactBtn';
-
 let content = document.querySelector('#content');
 let nav = `<nav>
       <h1 class="heading">Toulouse Exotica</h1>
