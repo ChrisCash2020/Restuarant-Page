@@ -1,15 +1,12 @@
 @import url('./index.css');
 .home-main {
-  height: calc(100vh - 80px);
+  min-height: calc(100% - 80px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 5vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+  min-width: 100%;
 }
 .home-main .message {
   display: flex;
@@ -19,9 +16,12 @@
   width: 50%;
   margin: 8vh;
 }
+.message h3 {
+  text-align: center;
+}
 .home-main .fancy-heading {
   text-align: center;
-  font-size: 4.2rem;
+  font-size: calc(2rem + 2vw);
 }
 .home-main input {
   margin-top: 1vh;
@@ -54,4 +54,17 @@
   color: #ad885f;
   font-size: 1rem;
   margin-right: 10px;
+}
+@media (max-width: 741px) {
+  .fancy-heading {
+    text-shadow: 2.2px 2.2px #707070;
+  }
+  .info {
+    width: 60%;
+  }
+}
+@media (max-width: 379px) {
+  .home-main {
+    top: 200px;
+  }
 }
